@@ -66,6 +66,40 @@ Estas directrices cubren desde el uso de HTML semántico hasta prácticas espec�
 
 ---
 
+
+
+##  Niveles de conformidad en WCAG: A, AA, AAA
+
+Las Web Content Accessibility Guidelines (WCAG) definen tres niveles de conformidad para clasificar qué tan accesible es un sitio web:
+
+### Nivel A (mínimo)
+Este es el nivel básico. Incluye los requisitos más esenciales para que el sitio sea accesible, si no se cumple A, muchas personas no podrán usar tu sitio.
+#### Ejemplos:
+- Todo contenido debe ser accesible mediante teclado.
+- No usar color como único medio para transmitir información.
+- Proveer texto alternativo (alt) en imágenes.
+
+### Nivel AA (intermedio – estándar recomendado)
+Es el nivel más comúnmente exigido por leyes y normativas internacionales. Es el nivel que garantiza una experiencia razonablemente accesible para la mayoría de usuarios.
+#### Ejemplos: 
+- Contraste mínimo entre texto y fondo de 4.5:1.
+- Elementos interactivos tienen foco visible.
+- Etiquetas e instrucciones claras en formularios.
+- Contenido no debe parpadear más de 3 veces por segundo.
+
+### Nivel AAA (avanzado)
+Este es el nivel más exigente. No se espera que todos los sitios lo cumplan completamente, pero es ideal para sitios dedicados a accesibilidad extrema (como instituciones de salud o educación especializada).
+
+#### Ejemplos:
+- Contraste de 7:1 entre texto y fondo.
+- Subtítulos en vivo para videos.
+- Evitar lenguaje ambiguo o poco claro.
+- Proveer múltiples formas de navegación.
+
+
+
+---
+
 ## ¿Qué es ARIA?
 
 **ARIA (Accessible Rich Internet Applications)** complementa HTML agregando atributos que describen el propósito y estado de los elementos a tecnologías asistivas.
