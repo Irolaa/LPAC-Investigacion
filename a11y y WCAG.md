@@ -1,4 +1,19 @@
-# Accesibilidad Web (a11y)
+<p align="center">
+  <img src="portada.png" alt="Foto de portada" width="300"/>
+</p>
+
+<h1 align="center">Accesibilidad Web (a11y)</h1>
+<h3 align="center">Aplicaciones Angular y pautas WCAG</h3>
+
+---
+
+**Profesor:** Alvaro Mena Monge  
+**Estudiantes:** Harvey Mendez, Luis Diego Irola  
+**Curso:** IF4101 - Lenguajes para aplicaciones comerciales  
+**Fecha:** 26 de mayo del 2025  
+**Tema:** Accesibilidad (a11y) en Aplicaciones Angular y pautas WCAG (frontend)
+
+---
 
 ## Introducción
 
