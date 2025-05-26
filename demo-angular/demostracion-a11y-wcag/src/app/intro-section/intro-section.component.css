@@ -1,0 +1,21 @@
+.intro {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  background-color: #fff3cd; /* fondo suave accesible */
+  color: #212529;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #856404; /* buen contraste y jerarquía */
+}
+
+.intro p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}

@@ -1,4 +1,19 @@
-/* Pega esto en src/styles.css, no en el .css del componente */
+.contrast-toggle {
+  text-align: center;
+  margin: 2rem;
+}
+
+.contrast-toggle button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #424242;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilo global cuando se activa el alto contraste */
 body.high-contrast {
   background-color: #000 !important;
   color: #fff !important;

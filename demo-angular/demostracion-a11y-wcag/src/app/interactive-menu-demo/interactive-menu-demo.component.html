@@ -1,0 +1,33 @@
+<section class="menu-demo" aria-labelledby="menu-demo-title">
+  <h2 id="menu-demo-title">Demo: Menú Accesible</h2>
+
+  <p>Este componente ejemplifica un menú accesible con soporte para teclado, lectores de pantalla y buenas prácticas ARIA.</p>
+
+  <button
+    id="menuToggle"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="menuOpen"
+    aria-controls="menuItems"
+    aria-label="Abrir o cerrar menú principal"
+  >
+    {{ menuOpen ? 'Cerrar Menú' : 'Abrir Menú' }}
+  </button>
+
+  <nav
+    id="menuItems"
+    [hidden]="!menuOpen"
+    aria-labelledby="menuToggle"
+  >
+    <ul role="menubar">
+      <li role="none">
+        <a role="menuitem" tabindex="0" href="#inicio">Inicio</a>
+      </li>
+      <li role="none">
+        <a role="menuitem" tabindex="0" href="#servicios">Servicios</a>
+      </li>
+      <li role="none">
+        <a role="menuitem" tabindex="0" href="#contacto">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+</section>

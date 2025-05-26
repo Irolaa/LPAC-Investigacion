@@ -1,0 +1,9 @@
+<div class="contrast-toggle">
+  <button
+    (click)="toggleContrast()"
+    [attr.aria-pressed]="highContrast"
+    aria-label="Alternar modo de alto contraste"
+  >
+    {{ highContrast ? 'Desactivar alto contraste' : 'Activar alto contraste' }}
+  </button>
+</div>

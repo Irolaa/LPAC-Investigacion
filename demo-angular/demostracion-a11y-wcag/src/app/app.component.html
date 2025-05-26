@@ -1,23 +1,9 @@
-<!-- app.component.html -->
-<div class="container">
-  <button
-    id="menuButton"
-    (click)="toggleMenu()"
-    [attr.aria-expanded]="menuOpen"
-    aria-controls="mainMenu"
-    aria-label="Abrir menú de navegación"
-  >
-    ☰ Menú
-  </button>
+<app-toggle-contrast></app-toggle-contrast>
 
-  <ul
-    id="mainMenu"
-    role="menu"
-    [hidden]="!menuOpen"
-    aria-labelledby="menuButton"
-  >
-    <li role="menuitem" tabindex="0">Inicio</li>
-    <li role="menuitem" tabindex="0">Servicios</li>
-    <li role="menuitem" tabindex="0">Contacto</li>
-  </ul>
-</div>
+<main>
+  <app-intro-section></app-intro-section>
+  <app-principios-section></app-principios-section>
+  <app-aria-demo></app-aria-demo>
+  <app-normativas-section></app-normativas-section>
+  <app-interactive-menu-demo></app-interactive-menu-demo>
+</main>

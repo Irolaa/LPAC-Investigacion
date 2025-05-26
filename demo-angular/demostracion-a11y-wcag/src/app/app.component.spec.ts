@@ -1,10 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { Component } from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -20,10 +21,11 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('demostracion-a11y-wcag');
   });
 
-  it('should render title', () => {
+  it('should render title in a <h1> tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, demostracion-a11y-wcag');
+    expect(compiled.querySelector('h1')?.textContent)
+      .toContain('Hello, demostracion-a11y-wcag');
   });
 });

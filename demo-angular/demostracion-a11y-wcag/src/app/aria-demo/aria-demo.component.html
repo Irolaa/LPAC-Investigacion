@@ -1,0 +1,26 @@
+<section class="aria-demo" aria-labelledby="aria-title">
+  <h2 id="aria-title">Ejemplo de uso de ARIA</h2>
+
+  <p>Este botón usa <code>aria-controls</code> y <code>aria-expanded</code> para indicar a los lectores de pantalla que controla un menú desplegable.</p>
+
+  <button
+    id="ariaButton"
+    (click)="toggleMenu()"
+    [attr.aria-expanded]="menuOpen"
+    aria-controls="ariaMenu"
+    aria-label="Abrir o cerrar menú de ejemplo"
+  >
+    {{ menuOpen ? 'Cerrar Menú' : 'Abrir Menú' }}
+  </button>
+
+  <ul
+    id="ariaMenu"
+    role="menu"
+    [hidden]="!menuOpen"
+    aria-labelledby="ariaButton"
+  >
+    <li role="menuitem" tabindex="0">Opción 1</li>
+    <li role="menuitem" tabindex="0">Opción 2</li>
+    <li role="menuitem" tabindex="0">Opción 3</li>
+  </ul>
+</section>
